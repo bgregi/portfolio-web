@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="692.069" height="273.835" viewBox="0 0 692.069 273.835">
+  <defs>
+    <filter id="Caminho_3" x="0" y="0" width="692.069" height="273.835" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#2d2d2d"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Caminho_3)">
+    <g id="Caminho_3-2" data-name="Caminho 3" transform="translate(-0.87)" fill="#f8e749">
+      <path d="M 605.3864135742188 264.3352661132813 L 2.373505830764771 264.3352661132813 L 2.373505830764771 1.499996662139893 L 680.0094604492188 1.499996662139893 L 606.0513916015625 51.05545043945313 L 605.3864135742188 51.50099563598633 L 605.3864135742188 52.30154037475586 L 605.3864135742188 264.3352661132813 Z" stroke="none"/>
+      <path d="M 3.87353515625 3 L 3.87353515625 262.8352661132813 L 603.8864135742188 262.8352661132813 L 603.8864135742188 52.30154418945313 L 603.8864135742188 50.70054626464844 L 605.2164916992188 49.80926513671875 L 675.0760498046875 3 L 3.87353515625 3 M 0.87353515625 0 L 684.9427490234375 0 L 606.8864135742188 52.30154418945313 L 606.8864135742188 265.8352661132813 L 0.87353515625 265.8352661132813 L 0.87353515625 0 Z" stroke="none" fill="#2d2d2d"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+.message {
+	background-image: url('/assets/messageBox.svg');
+	background-size: 500px;
+	background-repeat: no-repeat;
+
+	width: 525px;
+	height: 210px;
+
+	margin: 80px;
+	padding: 22px;
+}
+
+.messageText {
+	font-family: MavenPro-Medium, sans-serif;
+	font-size: 25px;
+
+    width: 420px;
+}
