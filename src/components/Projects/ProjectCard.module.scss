@@ -1,0 +1,16 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.card {
+    width: 400px;
+
+    display: flex;
+
+    border: 1px solid red;
+}
+
+.image {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}

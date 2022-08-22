@@ -1,0 +1,36 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: MavenPro-Bold, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: $black;
+}
+.separator {
+    background-color: $black;
+    height: 7px;
+
+    margin: 100px 100px 50px;
+}
+
+.projectsDescription {
+    text-align: center;
+    font-family: MavenPro-Semibold, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    font-family: MavenPro-Bold, sans-serif;
+    color: $black
+}
+
+a:hover {
+    text-decoration: underline;
+}

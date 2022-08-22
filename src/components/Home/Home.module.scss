@@ -1,3 +1,6 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
 .home {
     display: flex;
     justify-content: space-between;
@@ -6,4 +9,31 @@
     height: 400px;
 
     padding: 160px 250px 50px 160px;
+}
+
+.message {
+	background-image: url('/assets/messageBox.svg');
+	background-size: 500px;
+	background-repeat: no-repeat;
+
+	width: 525px;
+	height: 210px;
+
+	margin: 80px;
+	padding: 22px;
+}
+
+.messageText {
+	font-family: MavenPro-Medium, sans-serif;
+	font-size: 25px;
+    width: 420px;
+}
+
+.picture {
+    object-fit: cover;
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    border: 3px solid $black;
+    box-shadow: 12px 12px $black;
 }
