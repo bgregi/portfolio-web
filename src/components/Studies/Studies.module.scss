@@ -1,0 +1,22 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.separator {
+    background-color: $black;
+    height: 7px;
+
+    margin: 100px 100px 50px;
+}
+
+.projectsDescription {
+    text-align: center;
+    font-family: MavenPro-Semibold, sans-serif;
+    font-size: 20px;
+    color: $black;
+}
+
+.studyCards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}

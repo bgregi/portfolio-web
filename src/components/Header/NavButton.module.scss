@@ -1,19 +1,25 @@
 @import 'src/styles/variables';
 @import 'src/styles/breakpoints';
 
-.nav_button {
-	border: none;
-	background-color: $black;
-	font-size: 20px;
-	color: $white;
-	margin: 0 20px 3px;
-    padding: 5px 8px;
-}
+.buttonWrapper {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 
-.nav_button:hover {
-    // background-color: $white;
-    // color: $black;
-    font-size: 27px;
-    padding-bottom: 8px;
-    transition: 0.3s;
+	.nav_button {
+		border: none;
+        
+		background-color: $black;
+		font-size: 20px;
+		color: $white;
+		padding: 5px 8px;
+
+        &:hover {
+            font-size: 27px;
+            transition: 0.3s;
+        }
+	}
+    
 }

@@ -1,8 +1,11 @@
+import { useRecoilValue } from 'recoil';
+import { languageState } from 'state/atom';
 import styles from './ProjectCard.module.scss';
 
 interface IProject {
 	title: string;
-	description: string;
+	descriptionPT: string;
+	descriptionEN: string;
 	repoUrl: string;
 	siteUrl: string;
 	image: string;
@@ -10,18 +13,34 @@ interface IProject {
 
 export default function ProjectCard({
 	title,
-	description,
+	descriptionPT,
+	descriptionEN,
 	repoUrl,
 	siteUrl,
 	image,
 }: IProject) {
-	return <div className={styles.card}>
-        <img className={styles.image} src={image} alt='repo 1' />
-        <div className={styles.cardInfo}>
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <h3><a target='_blank' rel="noreferrer" href={repoUrl}>Repositório Github</a></h3>
-            <h3><a target='_blank' rel="noreferrer" href={siteUrl}>Live Site</a></h3>
-        </div>
-    </div>;
+    const language = useRecoilValue(languageState)
+
+    function redirectToLiveSite(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+        window.open(siteUrl)
+        
+        if (e.stopPropagation) e.stopPropagation();
+    }
+
+    function redirectToRepo(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+        window.open(repoUrl)
+        
+        if (e.stopPropagation) e.stopPropagation();
+    }
+
+	return (
+		<div className={styles.card} onClick={redirectToLiveSite}>
+			<img className={styles.image} src={image} alt='repository' />
+			<div className={styles.cardInfo}>
+				<h2>{title}</h2>
+				<p>{language === 'pt-br' ? descriptionPT : descriptionEN}</p>
+				<h3 onClick={redirectToRepo}>{language === 'pt-br' ? 'Repositório Github' : 'Github Repository'}</h3>
+			</div>
+		</div>
+	);
 }

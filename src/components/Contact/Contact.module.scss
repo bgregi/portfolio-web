@@ -1,0 +1,23 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.separator {
+    background-color: $black;
+    height: 7px;
+
+    margin: 100px 100px 50px;
+}
+
+.contactDescription {
+    text-align: center;
+    font-family: MavenPro-Semibold, sans-serif;
+    font-size: 20px;
+    color: $black;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 80px 150px;
+}

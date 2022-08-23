@@ -1,0 +1,21 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.contactWrapper {
+	width: 120px;
+	height: 120px;
+
+	display: flex;
+	justify-content: center;
+
+	.contact {
+		width: 100px;
+		position: relative;
+
+		&:hover {
+			width: 120px;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,51 +1,68 @@
 import styles from './Projects.module.scss';
-import jobsPicture from '../../assets/pictures/jobs.png'
-import ipTrackerPicture from '../../assets/pictures/ip-tracker.png'
-import sunnysidePicture from '../../assets/pictures/sunnyside.png'
-import todoAppPicture from '../../assets/pictures/todo.png'
+import jobsPicture from '../../assets/pictures/jobs.png';
+import ipTrackerPicture from '../../assets/pictures/ip-tracker.png';
+import sunnysidePicture from '../../assets/pictures/sunnyside.png';
+import todoAppPicture from '../../assets/pictures/todo.png';
 import ProjectCard from './ProjectCard';
+import { useRecoilValue } from 'recoil';
+import { languageState } from 'state/atom';
 
 export default function Projects() {
 	const projectsToShow = [
 		{
 			title: 'Static Jobs Listings',
-			description: 'Listagem e filtragem de vagas com uso de React.JS',
+			descriptionPT: 'Listagem e filtragem de vagas com uso de React.JS',
+			descriptionEN: 'Listing and filtering of jobs using React.JS',
 			repoUrl: 'https://github.com/bgregi/static-jobs-listings-new',
 			siteUrl: 'https://bgregi.github.io/static-jobs-listings-new/',
-			image: jobsPicture
+			image: jobsPicture,
 		},
 		{
 			title: 'IP Address Tracker',
-			description: 'Tracker de IP com uso das APIs externas IPify e LeafletJS',
+			descriptionPT:
+				'Tracker de IP com uso das APIs externas IPify e LeafletJS',
+			descriptionEN:
+				'IP Tracker using the external APIs IPify and LeafletJS',
 			repoUrl: 'https://github.com/bgregi/fm-ip-address-tracker',
 			siteUrl: 'https://bgregi.github.io/fm-ip-address-tracker',
-			image: ipTrackerPicture
+			image: ipTrackerPicture,
 		},
 		{
 			title: 'To-Do App',
-			description: 'Lista de tarefas com funcionalidades em JS e uso de SASS',
+			descriptionPT:
+				'Lista de tarefas com funcionalidades em JS e uso de SASS',
+			descriptionEN:
+				'To-do list with functionalities in JS and using SASS',
 			repoUrl: 'https://github.com/bgregi/fm-todo-app',
 			siteUrl: 'https://bgregi.github.io/fm-todo-app/',
-			image: sunnysidePicture
+			image: todoAppPicture,
 		},
 		{
 			title: 'Sunnyside Agency Landing Page',
-			description: 'Landing page com responsividade e uso de JS, SASS e CSS Grid',
+			descriptionPT:
+				'Landing page com responsividade e uso de JS, SASS e CSS Grid',
+			descriptionEN:
+				'Landing page with responsivity using JS, SASS and CSS Grid',
 			repoUrl: 'https://github.com/bgregi/fm-sunnyside-landing-page',
 			siteUrl: 'https://bgregi.github.io/fm-sunnyside-landing-page/',
-			image: todoAppPicture
-		}
-	]
+			image: sunnysidePicture,
+		},
+	];
+
+	const language = useRecoilValue(languageState);
 
 	return (
 		<>
 			<div>
 				<div className={styles.separator}></div>
-				<h1>PROJETOS</h1>
+				<h1>{language === 'pt-br' ? 'PROJETOS' : 'PROJECTS'}</h1>
 				<p className={styles.projectsDescription}>
-					Estas são as principais aplicações desenvolvidas por mim,
-					mas tem mais no meu {' '}
-					<a
+					{language === 'pt-br'
+						? `Estas são as principais aplicações desenvolvidas por mim,
+					mas tem mais no meu ${' '}`
+						: `These are the main applications developed by me,
+                    but there's more in my ${' '}`}
+					<a className={styles.link}
 						target='_blank'
 						rel='noreferrer'
 						href='https://github.com/bgregi'>
@@ -53,7 +70,11 @@ export default function Projects() {
 					</a>
 				</p>
 			</div>
-			<div className={styles.projectList}>{projectsToShow.map(project => <ProjectCard key={project.title} {...project} />)}</div>
+			<div className={styles.projectList}>
+				{projectsToShow.map((project) => (
+					<ProjectCard key={project.title} {...project} />
+				))}
+			</div>
 		</>
 	);
 }
