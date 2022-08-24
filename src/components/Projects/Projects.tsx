@@ -54,7 +54,7 @@ export default function Projects() {
 	return (
 		<>
 			<div>
-				<div className={styles.separator}></div>
+				<div id='projects' className={styles.separator}></div>
 				<h1>{language === 'pt-br' ? 'PROJETOS' : 'PROJECTS'}</h1>
 				<p className={styles.projectsDescription}>
 					{language === 'pt-br'

@@ -76,10 +76,10 @@ export default function Studies() {
 
 	return (
 		<>
-			<div className={styles.separator}></div>
+			<div id='studies' className={styles.separator}></div>
 			<h1>{language === 'pt-br' ? 'ESTUDOS' : 'STUDIES'}</h1>
             <p className={styles.projectsDescription}>{language === 'pt-br' ? 'Estes são os cursos que completei desde 2021' : 'These are the courses I\'ve completed since 2021'}</p>
-			<div className={styles.studyCards}>{coursesList.map(course => <StudyCard {...course}/>)}</div>
+			<div className={styles.studyCards}>{coursesList.map((course, i) => <StudyCard {...course} key={i}/>)}</div>
 		</>
 	);
 }

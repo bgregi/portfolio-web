@@ -36,11 +36,11 @@ export default function Contact() {
 
 	return (
 		<>
-        <div className={styles.separator}></div>
+        <div id='contact' className={styles.separator}></div>
 			<h1>{language === 'pt-br' ? 'CONTATO' : 'CONTACT'}</h1>
             <p className={styles.contactDescription}>{language === 'pt-br' ? 'Se você gostou do meu trabalho e quer me conhecer melhor, use um dos links abaixo!' : 'If you liked my work and want to get to know me better, use one of the links below!'}</p>
             <div className={styles.contactLinks}>
-                {contactLinks.map(contact => <ContactLink {...contact} />)}
+                {contactLinks.map((contact, i) => <ContactLink {...contact} key={i} />)}
             </div>
 
 		</>

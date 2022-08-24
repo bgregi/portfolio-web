@@ -15,19 +15,13 @@ export default function StudyCard({company, completedCoursesPT, completedCourses
     let coursesShown = []
 
     if (language === 'pt-br') {
-        coursesShown = completedCoursesPT.map(course => <li>{course}</li>)
+        coursesShown = completedCoursesPT.map((course, i) => <li key={i}>{course}</li>)
     } else {
-        coursesShown = completedCoursesEN.map(course => <li>{course}</li>)
-    }
-
-    function redirectToCourseSite(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        window.open(courseUrl)
-        
-        if (e.stopPropagation) e.stopPropagation();
+        coursesShown = completedCoursesEN.map((course, i) => <li key={i}>{course}</li>)
     }
 
     return (
-        <div className={styles.studyCard} onClick={redirectToCourseSite}>
+        <div className={styles.studyCard} onClick={() => window.open(courseUrl)}>
             <h2>{company}</h2>
             <div>{coursesShown}</div>
         </div>

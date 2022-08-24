@@ -15,7 +15,7 @@ export default function Home() {
 	}
 
 	return (
-		<div className={styles.home}>
+		<div id='home' className={styles.home}>
 			<div className={styles.message}>
 				<p className={styles.messageText}>{messageText}</p>
 			</div>

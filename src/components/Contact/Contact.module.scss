@@ -6,6 +6,10 @@
     height: 7px;
 
     margin: 100px 100px 50px;
+
+    @media (max-width: $tablet) {
+        margin: 50px
+    }
 }
 
 .contactDescription {
@@ -13,6 +17,10 @@
     font-family: MavenPro-Semibold, sans-serif;
     font-size: 20px;
     color: $black;
+    
+    @media (max-width: $mobile) {
+        font-size: 16px;
+    }
 }
 
 .contactLinks {
@@ -20,4 +28,8 @@
     justify-content: space-around;
 
     margin: 80px 150px;
+
+    @media (max-width: $tablet) {
+        margin: 40px
+    }
 }
