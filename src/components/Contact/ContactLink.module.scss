@@ -1,0 +1,33 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.contactWrapper {
+	display: flex;
+	justify-content: center;
+
+    @media (min-width: ($mobile + 1)) and (max-width: $tablet) {
+        margin: 0 20px;
+
+    }
+
+	.contact {
+		width: 100px;
+		position: relative;
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            width: 80px;
+        }
+
+        @media (max-width: $mobile) {
+            width: 60px;
+        }
+
+		&:hover {
+			@media (min-width: $desktop_sm) {
+				width: 120px;
+				transition: 0.3s;
+				cursor: pointer;
+			}
+		}
+	}
+}

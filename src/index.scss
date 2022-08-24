@@ -1,0 +1,58 @@
+@font-face {
+    font-family: MavenPro-Black;
+    src: url(assets/fonts/MavenPro-Black.ttf);
+}
+@font-face {
+    font-family: MavenPro-Bold;
+    src: url(assets/fonts/MavenPro-Bold.ttf);
+}
+@font-face {
+    font-family: MavenPro-ExtraBold;
+    src: url(assets/fonts/MavenPro-ExtraBold.ttf);
+}
+@font-face {
+    font-family: MavenPro-Medium;
+    src: url(assets/fonts/MavenPro-Medium.ttf);
+}
+@font-face {
+    font-family: MavenPro-Regular;
+    src: url(assets/fonts/MavenPro-Regular.ttf);
+}
+@font-face {
+    font-family: MavenPro-SemiBold;
+    src: url(assets/fonts/MavenPro-SemiBold.ttf);
+}
+
+@import "./styles/breakpoints";
+@import "./styles/variables";
+
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'MavenPro-Regular', sans-serif;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    background-color: $white;
+}
+
+h1 {
+    font-family: MavenPro-Bold, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 15px;
+
+    @media (max-width: $tablet) {
+        font-size: 40px;
+    }
+}
+  
+  

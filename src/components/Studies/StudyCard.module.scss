@@ -1,0 +1,42 @@
+@import 'src/styles/_variables';
+@import 'src/styles/_breakpoints';
+
+.studyCard {
+    width: 300px;
+    border: 3px solid $black;
+    border-radius: 30px;
+    box-shadow: 12px 12px $black;
+    padding: 20px 30px;
+    background-color: $blue;
+    margin: 35px 50px;
+    color: $black;
+
+
+    
+    h2 {
+        font-family: MavenPro-Semibold, sans-serif;
+        margin-bottom: 15px;
+        text-align: center;        
+    }
+    
+    li {
+        font-family: MavenPro-Semibold, sans-serif;
+        margin: 7px 0;
+        text-align: center;
+
+    }
+
+    &:hover {
+        @media (min-width: $desktop_sm) {
+        background-color: $yellow;
+        cursor: pointer;
+        }
+    }
+    
+    &:active {
+        box-shadow: none;
+        position: relative;
+        left: 12px;
+        top: 12px;        
+    }
+}
