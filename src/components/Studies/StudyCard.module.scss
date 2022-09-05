@@ -1,35 +1,21 @@
 @import 'src/styles/_variables';
 @import 'src/styles/_breakpoints';
 
-.studyCard {
-    width: 300px;
-    border: 3px solid $black;
-    border-radius: 30px;
-    box-shadow: 12px 12px $black;
-    padding: 20px 30px;
-    background-color: $blue;
-    margin: 35px 50px;
-    color: $black;
-
-
-    
-    h2 {
-        font-family: MavenPro-Semibold, sans-serif;
-        margin-bottom: 15px;
-        text-align: center;        
-    }
-    
-    li {
-        font-family: MavenPro-Semibold, sans-serif;
-        margin: 7px 0;
-        text-align: center;
-
-    }
+.studyCardHidden {
+	width: 300px;
+	height: 75px;
+	border: 3px solid $black;
+	border-radius: 30px;
+	box-shadow: 12px 12px $black;
+	padding: 20px 30px;
+	background-color: $blue;
+	margin: 35px 50px;
+	color: $black;
 
     &:hover {
         @media (min-width: $desktop_sm) {
-        background-color: $yellow;
-        cursor: pointer;
+            background-color: $yellow;
+            cursor: pointer;
         }
     }
     
@@ -37,6 +23,88 @@
         box-shadow: none;
         position: relative;
         left: 12px;
-        top: 12px;        
+        top: 12px;
+    }
+}
+.title {
+	h2 {
+		font-family: MavenPro-Semibold, sans-serif;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.arrow {
+		position: relative;
+		background-image: url('../../assets/svg/downArrow.svg');
+		background-repeat: no-repeat;
+		background-size: 20px;
+		width: 20px;
+		height: 10px;
+		// margin: 0 0 5px 10px;
+
+		left: 200px;
+		bottom: 30px;
+	}
+
+	.inverted {
+		position: relative;
+		background-image: url('../../assets/svg/downArrow.svg');
+		background-repeat: no-repeat;
+		background-size: 20px;
+		width: 20px;
+		height: 10px;
+		// margin: 5px 0 0px 10px;
+
+		left: 200px;
+		bottom: 30px;
+		transform: rotate(180deg);
+	}
+}
+
+.coursesHidden {
+	display: none;
+}
+
+.coursesShown {
+	display: block;
+
+	li {
+		font-family: MavenPro-Semibold, sans-serif;
+		margin: 7px 0;
+		text-align: center;
+	}
+}
+
+.studyCardShown {
+    width: 300px;
+	height: auto;
+	border: 3px solid $black;
+	border-radius: 30px;
+	box-shadow: 12px 12px $black;
+	padding: 20px 30px;
+	background-color: $blue;
+	margin: 35px 50px;
+	color: $black;
+
+    &:hover {
+        @media (min-width: $desktop_sm) {
+            background-color: $yellow;
+            cursor: pointer;
+        }
+    }
+    
+    &:active {
+        box-shadow: none;
+        position: relative;
+        left: 12px;
+        top: 12px;
+    }
+}
+
+.courseUrl {
+    color: $black;
+
+    &:hover {
+        text-decoration: underline;
     }
 }

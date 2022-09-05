@@ -55,7 +55,9 @@ export default function Studies() {
 				'React: testando os seus componentes',
 				'Microsserviços: padrões de projeto',
 				'Microsserviços: explorando os conceitos',
-                'Microsserviços na prática: entendendo a tomada de decisões'
+                'Microsserviços na prática: entendendo a tomada de decisões',
+                'Python: começando com a linguagem',
+                'Python: avançando na linguagem'
 			],
 			completedCoursesEN: [
 				'TypeScript Part 1: evolving Your JavaScript',
@@ -70,7 +72,9 @@ export default function Studies() {
 				'React: testing your components',
 				'Microservices: design patterns',
 				'Microservices: exploring the concepts',                
-                'Microservices in practice: understanding decision making'
+                'Microservices in practice: understanding decision making',
+                'Python: starting with the language',
+                'Python: advancing in the language'
 			],
             courseUrl: 'https://cursos.alura.com.br/formacoes'
 		}
