@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-web/static/css/main.7b32b592.css",
+    "main.css": "/portfolio-web/static/css/main.b963bc57.css",
     "main.js": "/portfolio-web/static/js/main.062a48e4.js",
     "static/media/sunnyside.png": "/portfolio-web/static/media/sunnyside.6fe85162b13392bf76f7.png",
     "static/media/ip-tracker.png": "/portfolio-web/static/media/ip-tracker.5bdb8abbd84abe1dfdbe.png",
@@ -23,11 +23,11 @@
     "static/media/gmail.svg": "/portfolio-web/static/media/gmail.20da7717e2508bc9cd20d8032d149802.svg",
     "static/media/menu.svg": "/portfolio-web/static/media/menu.521d60394daae4045aa984966b28227b.svg",
     "static/media/downArrow.svg": "/portfolio-web/static/media/downArrow.fede9c55231f6dd0b6d6.svg",
-    "main.7b32b592.css.map": "/portfolio-web/static/css/main.7b32b592.css.map",
+    "main.b963bc57.css.map": "/portfolio-web/static/css/main.b963bc57.css.map",
     "main.062a48e4.js.map": "/portfolio-web/static/js/main.062a48e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b32b592.css",
+    "static/css/main.b963bc57.css",
     "static/js/main.062a48e4.js"
   ]
 }
