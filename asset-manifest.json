@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-web/static/css/main.88da7ab3.css",
-    "main.js": "/portfolio-web/static/js/main.497cde0f.js",
+    "main.css": "/portfolio-web/static/css/main.7b32b592.css",
+    "main.js": "/portfolio-web/static/js/main.062a48e4.js",
     "static/media/sunnyside.png": "/portfolio-web/static/media/sunnyside.6fe85162b13392bf76f7.png",
     "static/media/ip-tracker.png": "/portfolio-web/static/media/ip-tracker.5bdb8abbd84abe1dfdbe.png",
     "static/media/todo.png": "/portfolio-web/static/media/todo.3520b08e800b4ac01025.png",
@@ -14,6 +14,7 @@
     "static/media/MavenPro-Medium.ttf": "/portfolio-web/static/media/MavenPro-Medium.5c573586d51e1f18df66.ttf",
     "static/media/MavenPro-Regular.ttf": "/portfolio-web/static/media/MavenPro-Regular.338a20c4765ae0ad3b13.ttf",
     "static/media/instagram.svg": "/portfolio-web/static/media/instagram.93c5f4dff2ce8f3b593e9783aae570be.svg",
+    "static/media/messageBoxMobile.svg": "/portfolio-web/static/media/messageBoxMobile.c20c7fee70fdaab5c342.svg",
     "static/media/whatsapp.svg": "/portfolio-web/static/media/whatsapp.c65180424f701633e5fee2893f4a54ff.svg",
     "static/media/messageBox.svg": "/portfolio-web/static/media/messageBox.897e8cc7ddbc819521f8.svg",
     "static/media/github.svg": "/portfolio-web/static/media/github.9b36c7a1ee19eab287063e0a4daf44cc.svg",
@@ -21,11 +22,12 @@
     "index.html": "/portfolio-web/index.html",
     "static/media/gmail.svg": "/portfolio-web/static/media/gmail.20da7717e2508bc9cd20d8032d149802.svg",
     "static/media/menu.svg": "/portfolio-web/static/media/menu.521d60394daae4045aa984966b28227b.svg",
-    "main.88da7ab3.css.map": "/portfolio-web/static/css/main.88da7ab3.css.map",
-    "main.497cde0f.js.map": "/portfolio-web/static/js/main.497cde0f.js.map"
+    "static/media/downArrow.svg": "/portfolio-web/static/media/downArrow.fede9c55231f6dd0b6d6.svg",
+    "main.7b32b592.css.map": "/portfolio-web/static/css/main.7b32b592.css.map",
+    "main.062a48e4.js.map": "/portfolio-web/static/js/main.062a48e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.88da7ab3.css",
-    "static/js/main.497cde0f.js"
+    "static/css/main.7b32b592.css",
+    "static/js/main.062a48e4.js"
   ]
 }
