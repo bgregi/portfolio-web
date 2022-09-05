@@ -9,11 +9,14 @@
     height: 400px;
 
     padding: 160px 0 50px 0;
+    margin-bottom: 50px;
 
     @media (max-width: $mobile) {
         flex-direction: column;
         height: 600px;
         padding: 50px 0 0;
+        margin-bottom: 0px;
+
     }
 }
 
