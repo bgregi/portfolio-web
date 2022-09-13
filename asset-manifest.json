@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio-web/static/css/main.b963bc57.css",
-    "main.js": "/portfolio-web/static/js/main.062a48e4.js",
+    "main.js": "/portfolio-web/static/js/main.21c19ff3.js",
     "static/media/sunnyside.png": "/portfolio-web/static/media/sunnyside.6fe85162b13392bf76f7.png",
     "static/media/ip-tracker.png": "/portfolio-web/static/media/ip-tracker.5bdb8abbd84abe1dfdbe.png",
     "static/media/todo.png": "/portfolio-web/static/media/todo.3520b08e800b4ac01025.png",
+    "static/media/spotify.png": "/portfolio-web/static/media/spotify.7a83c90bdd7ef541c0dd.png",
     "static/media/profilePicture.jpeg": "/portfolio-web/static/media/profilePicture.c9b89c9fb6a8efb51c9c.jpeg",
     "static/media/jobs.png": "/portfolio-web/static/media/jobs.ca23bf0f464f24e7b5d2.png",
     "static/media/MavenPro-SemiBold.ttf": "/portfolio-web/static/media/MavenPro-SemiBold.3ecfee6cdc621df471e8.ttf",
@@ -24,10 +25,10 @@
     "static/media/menu.svg": "/portfolio-web/static/media/menu.521d60394daae4045aa984966b28227b.svg",
     "static/media/downArrow.svg": "/portfolio-web/static/media/downArrow.fede9c55231f6dd0b6d6.svg",
     "main.b963bc57.css.map": "/portfolio-web/static/css/main.b963bc57.css.map",
-    "main.062a48e4.js.map": "/portfolio-web/static/js/main.062a48e4.js.map"
+    "main.21c19ff3.js.map": "/portfolio-web/static/js/main.21c19ff3.js.map"
   },
   "entrypoints": [
     "static/css/main.b963bc57.css",
-    "static/js/main.062a48e4.js"
+    "static/js/main.21c19ff3.js"
   ]
 }
