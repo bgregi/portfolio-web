@@ -1,4 +1,5 @@
 import styles from './Projects.module.scss';
+import spotifyPicture from '../../assets/pictures/spotify.png';
 import jobsPicture from '../../assets/pictures/jobs.png';
 import ipTrackerPicture from '../../assets/pictures/ip-tracker.png';
 import sunnysidePicture from '../../assets/pictures/sunnyside.png';
@@ -9,6 +10,14 @@ import { languageState } from 'state/atom';
 
 export default function Projects() {
 	const projectsToShow = [
+		{
+			title: 'What\'s My Taste? A Spotify API Web App',
+			descriptionPT: 'Exibe as preferências musicais do usuário do Spotify. Feito com React.JS e Typescript',
+			descriptionEN: 'Displays Spotify user\'s music preferences. Made with React.JS and Typescript',
+			repoUrl: 'https://github.com/bgregi/spotify-whats-my-taste',
+			siteUrl: 'https://bgregi.github.io/spotify-whats-my-taste/',
+			image: spotifyPicture,
+		},
 		{
 			title: 'Static Jobs Listings',
 			descriptionPT: 'Listagem e filtragem de vagas com uso de React.JS',

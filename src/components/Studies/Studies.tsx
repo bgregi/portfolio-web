@@ -57,7 +57,9 @@ export default function Studies() {
 				'Microsserviços: explorando os conceitos',
                 'Microsserviços na prática: entendendo a tomada de decisões',
                 'Python: começando com a linguagem',
-                'Python: avançando na linguagem'
+                'Python: avançando na linguagem',
+                'Python: entendendo a orientação a objetos',
+                'Python: avançando na orientação a objetos'
 			],
 			completedCoursesEN: [
 				'TypeScript Part 1: evolving Your JavaScript',
@@ -74,7 +76,9 @@ export default function Studies() {
 				'Microservices: exploring the concepts',                
                 'Microservices in practice: understanding decision making',
                 'Python: starting with the language',
-                'Python: advancing in the language'
+                'Python: advancing in the language',
+                'Python: understanding object orientation',
+                'Python: advancing in object orientation'
 			],
             courseUrl: 'https://cursos.alura.com.br/formacoes'
 		}
